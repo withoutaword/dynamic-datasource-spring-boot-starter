@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zhongxiaohua.samples.dao.DemoDao">
+
+  <!-- 添加一条数据 -->
+  <insert id="insert" parameterType="com.zhongxiaohua.samples.domain.po.Demo" useGeneratedKeys="true" keyProperty="id">
+    insert into demo (name) values (#{name})
+  </insert>
+
+  <!-- 查询全部记录 -->
+  <select id="listByAll" resultType="com.zhongxiaohua.samples.domain.po.Demo">
+    select * from demo
+  </select>
+
+</mapper>

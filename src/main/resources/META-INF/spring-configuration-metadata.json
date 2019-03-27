@@ -1,0 +1,17 @@
+{
+  "properties": [
+    {
+      "name": "spring.datasource.dynamic.patterns",
+      "type": "java.util.Collection<java.lang.String>",
+      "sourceType": "com.zhongxiaohua.dynamic.datasource.spring.boot.autoconfigure.MultiDataSourceProperties"
+    },
+    {
+      "name": "spring.datasource.druid.master.url",
+      "type": "java.lang.String"
+    },
+    {
+      "name": "spring.datasource.druid.slave.url",
+      "type": "java.lang.String"
+    }
+  ]
+}
